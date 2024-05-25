@@ -16,7 +16,6 @@ public static class MarseyPatch
 [HarmonyPatch]
 public static class ExplosionOverlayPatch
 {
-    // This must return a MethodInfo forп the function you're patching. In this case it's the function called "DrawOcclusionDepth" located in the "Robust.Client.Graphics.Clyde.Clyde" type.
     private static MethodBase TargetMethod() 
     {
         var ExplosionOverlay = MarseyPatch.ContentClient.GetType("Content.Client.Explosion.ExplosionOverlay")!;
